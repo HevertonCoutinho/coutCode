@@ -1,0 +1,224 @@
+/*config background page*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; ;
+
+}
+/*Config menu header*/
+.center{
+    max-width: 1100px;
+    margin:0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu-mobile{
+    display:none;
+
+
+}
+header{
+    background-color: rgba(255, 255, 255, 0.185);
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(200,200,200);
+    
+}
+.menu{
+    width:80%;
+    text-align: right;
+}
+.menu a {
+    color:#124265;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 20px;
+    transition:0.4s;
+
+}
+menu a:hover{
+    color:#007bff;
+}
+.menu .btn-menu{
+    background-color: #007bff;
+    display: inline-block;
+    padding:8px 16px;
+    color: white;
+    border-radius: 6px;
+}
+.menu .btn-menu:hover{
+    background-color: #124265;
+    color:white;
+
+}
+/*config section.main Body page*/
+section.main{
+    background-image: url("./imagens/background-one.jpg");
+    padding:60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
+}
+.main__cta{
+    width:100%;
+    text-align:center;
+    margin:60px 0;
+    color:white;
+}
+.main__cta h2{
+    font-size:40px;
+}
+.main__cta p{
+    color: gray;
+    font-size: 19px;
+    margin: 10px 0;
+}
+.main__cta button{
+    background-color:#007bff;
+    display:inline-block;
+    padding:8px 30px;
+    color:white;
+    border-radius:6px;
+    border:0;
+    font-size:16px;
+    cursor:pointer;
+}
+.diferenciais{
+    display:flex;
+    width:100%;
+    padding-bottom: 50px;
+    flex-wrap:wrap;
+}
+.diferencial-single{
+    background-color:white;
+    width:23%;
+    margin-right: 2%;
+    padding:50px 20px;
+    border-radius: 2px;
+    
+}
+.diferencial-single h2{
+    color:#124265;
+    font-size:23px;
+}
+.diferencial-single p{
+    color:gray;
+    font-size:14px;
+    line-height: 30px;
+}
+section.about-us{
+    padding:50px 0;    
+}
+.chamada-sobre{
+    width:100%;
+    text-align: center;
+}
+.chamada-sobre h2{
+    color:#124265;
+    text-transform:uppercase;
+}
+.chamada-sobre p{
+    font-size:14px;
+    color:gray;
+    margin:10px 0;
+}
+.conteudo-sobre{
+    display:flex;
+    flex-wrap:wrap;
+    width:100%;
+    padding:0 14%;
+    padding-bottom: 100px;
+}
+.conteudo-sobre p{
+    width:48%;
+    margin-right: 2%;
+    font-size: 14px;
+    font-family: 'Poppins:weight300', sans-serif;
+    line-height: 30px;
+    color:#444444;
+}
+
+/* Conquitas */
+section.conquistas{
+    background-color: rgb(197, 255, 247);
+    padding:80px 0;
+}
+.conquista-single{
+    width:22%;
+    margin-right:3%;
+    text-align:center;
+    color:#124265;
+}
+.conquista-single h2{
+    font-size:29px;
+    font-family: 'Poppins:weight900', sans-serif;
+    margin: 5px;
+}
+section.contact{
+    padding:80px 0;
+}
+/*entre em contato*/
+.entre-em-contato{
+    width:100%;
+    text-align:center;
+    flex-wrap:wrap;
+}
+.entre-em-contato h2{
+    text-transform: uppercase;
+}
+.entre-em-contato p{
+    margin:20px;
+}
+#contact_form{
+    width:100%;
+    padding:0 27%;
+}
+.input{
+    width:500px;    
+  }
+#submit_button{
+    background-color: #007bff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    color:white;
+    font-size: 14px;
+}
+
+/*Responsive*/
+@media screen and (max-width: 768px) {
+    .menu{
+        display:none;
+    }
+    .logo{
+        width:20%;
+    }
+    .menu-mobile img{
+        cursor:pointer;
+        width:40px;
+        height: 40px;
+        font-size:23px;
+        margin-top: 8px;
+    }
+    .menu-mobile{
+        width:80%;
+        text-align: right;
+        display:block;
+
+    }
+    .diferencial-single{
+        width:100%; 
+        margin-bottom:20px;
+    }
+    .conteudo-sobre p{
+        width:100%; margin:20px 20px;
+    }
+    #contact_form{
+        width:100%;
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+}
+

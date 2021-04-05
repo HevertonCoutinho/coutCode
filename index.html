@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100;1,200&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="center">
+            <div class="logo">
+                <h2><span>cout</span><span>.</span>code</h2>
+            </div>
+            <div class="menu">
+                <a href="#">
+                    home
+                </a>
+                <a href="#">
+                    about
+                </a>
+                <a href="#">
+                    contact
+                </a>
+                <a class="btn-menu" href="#">
+                    Registrar
+                </a>
+            </div>
+            <div class="menu-mobile">
+                <img src="./icons/hamburguer-menu.svg" alt="incon-menu" type="button">
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="center">
+            <div class="main__cta">
+                <h2>One Page Sample</h2>
+                <p>We are team danki code</p>
+                <button>Get Started</button>
+            </div>
+            <div class="diferenciais">
+                <div class="diferencial-single">
+                    <img src="./icons/diferenca.svg" alt="some text" width="40px" height="20">
+                    <h2>compromisso</h2>
+                    <p>Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de
+                        2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de
+                        45 AC. </p>
+                </div>
+                <div class="diferencial-single">
+                    <img src="./icons/diferenca.svg" alt="some text" width="40px" height="20">
+                    <h2>resiliência</h2>
+                    <p>Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de
+                        2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de
+                        45 AC. </p>
+                </div>
+                <div class="diferencial-single">
+                    <img src="./icons/diferenca.svg" alt="some text" width="40px" height="20">
+                    <h2>preparo</h2>
+                    <p>Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de
+                        2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de
+                        45 AC. </p>
+                </div>
+                <div class="diferencial-single">
+                    <img src="./icons/diferenca.svg" alt="some text" width="40px" height="20">
+                    <h2>competência</h2>
+                    <p>Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de
+                        2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de
+                        45 AC.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="center">
+            <div class="chamada-sobre">
+                <h2>Sobre a cout.cod</h2>
+                <p>loren ipsun tatataatnant</p>
+            </div>
+        </div>
+    </section>
+    <div class="conteudo-sobre">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.,<br />
+            <img src="./icons/tick.svg" alt="some text" width="30px" height="15"> Lorem Ipsum has been the industry's
+            standard dummy text.<br />
+            <img src="./icons/tick.svg" alt="some text" width="30px" height="15"> when an unknown printer took a galley
+            of type and scrambled.<br />
+            <img src="./icons/tick.svg" alt="some text" width="30px" height="15">specimen book. It has survived not only
+            five centuries.<br />
+        </p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.,<br />
+            Lorem Ipsum has been the industry's standard dummy text ever.<br />
+            when an unknown printer took a galley of type and scrambled.<br />
+            specimen book. It has survived not only five centuries.<br />
+        </p>
+    </div>
+    <section class="conquistas">
+        <div class="center">
+            <div class="conquista-single">
+                <h2>+100mil</h2>
+                <p>Alunos</p>
+            </div>
+            <div class="conquista-single">
+                <h2>+1000mil</h2>
+                <p>Escolas</p>
+            </div>
+            <div class="conquista-single">
+                <h2>+7000mil</h2>
+                <p>Novos Matriculados</p>
+            </div>
+            <div class="conquista-single">
+                <h2>+100000000 M.</h2>
+                <p>Em Receita</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="center">
+            <div class="entre-em-contato">
+                <h2>Entre em contato</h2>
+                <p>Faça sua matricula por email ou telefone!</p>
+            </div>
+            <form id="contact_form" action="#" method="POST" enctype="multipart/form-data" name="form">
+                <div class="row">
+                    <label class="required" for="name">Seu nome:</label><br />
+                    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                    <span id="name_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                    <label class="required" for="email">Seu email:</label><br />
+                    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                    <span id="email_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                    <label class="required" for="message">Sua Mensagem:</label><br />
+                    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                    <span id="message_validation" class="error_message"></span>
+                </div>
+                <input id="submit_button" type="submit" value="Enviar Mensagem" onclick="verificarTexto()"/>
+            </form>
+        </div>
+    </section>  
+    <script type="text/javascript" src="index.js">
+    </script> 
+</body>
+
+</html>
